@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+    /* background-color: black; */
+    /* scroll-behavior:smooth; */
+}
+header {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 2;
+}
+header img {
+    border: 2px solid rgb(0, 170, 255);
+    box-shadow: inset 0px 0px 10px 0px rgb(0, 183, 255);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: black;
+    height: 45px;
+    width: 65px;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+.nav li {
+    list-style: none;
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    display: inline;
+    margin: 20px;
+    /* border: 1px solid red;       */
+}
+.nav li a {
+    letter-spacing: 2px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 5px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    /* transition: all 0.3s ease-out; */
+    font-style: italic;
+}
+.btn {
+    position: absolute;
+    right: 180px;
+}
+#bars{
+    display: none;
+}
+.btn .probtn {
+      border: none;
+    background: none;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin: 12px 5px;
+    z-index: 2;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease-out;
+    font-style: italic;cursor: pointer;
+  
+}
+
+.btn .probtn:hover {
+    color: rgb(0, 0, 0);
+    transition: all 0.2s ease-out;
+    text-shadow: 1px 1px 10px rgb(0, 191, 255), 2px 2px 13px rgb(255, 255, 255), 0px 0px 13px rgb(0, 183, 255);
+}
+
+
+.btn .pro a:hover {
+    border: 1px solid rgba(255, 255, 255, 0.954);
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 13px rgb(0, 183, 255), 0px 0px 13px rgb(0, 170, 255);
+}
+
+.btn .pro a {
+    background: none;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn .pro {
+    font-style: italic;
+    visibility: hidden;
+    opacity: 0.1;
+    position: absolute;
+    margin-top: 5px;
+    /* background: none; */
+    background-color: rgba(0, 0, 0, 0.758);
+    min-width: 260px;
+    box-shadow: 0px 7px 10px 0px rgba(0, 183, 255, 0.694);
+    width: 20%;
+    transform: translateY(10%);
+    transition: all 0.5s ease;
+}
+.btn a{
+    border: none;
+    background: none;
+    font-size: 15px;
+    /* margin: 12px 5px; */
+    z-index: 2;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease-out;
+    font-style: italic;cursor: pointer;
+}
+.btn:hover .pro {
+    visibility: visible;
+    transform: translateY(0%);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+li a:hover {
+    color: rgb(0, 0, 0);
+    transition: all 0.2s ease-out;
+    text-shadow: 1px 1px 10px rgb(0, 191, 255), 2px 2px 13px rgb(255, 255, 255), 0px 0px 13px rgb(0, 183, 255);
+}
+.container {
+    background-image: url(/img/loginbg.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+}
+form {
+    position: fixed;
+    color: white;
+    text-align: right;
+    width: 50%;
+    font-weight: bold;
+    padding: 50px;
+    font-style: italic;
+}
+.input {
+    font-style: italic;
+    margin: 10px 20px;
+    box-shadow: 0px 0px 10px 0px skyblue;
+    color: white;
+    background-color: rgba(20, 45, 54, 0.644);
+    border-radius: 5px;
+    border: 1px solid skyblue;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    width: 40%;
+}
+#btn {
+    color: white;
+    margin: 10px 20px;
+    font-size: 15px;
+    width: 20%;
+    background: none;
+    transition: all 1s ease-out;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    text-shadow: 0px 0px 10px skyblue, 0px 0px 10px skyblue;
+    font-style: italic;
+}
+#btn:hover {
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: all 1s ease;
+    box-shadow: inset 15cap 0cap 5px 1px rgba(0, 195, 255, 0.76), 0px 0px 15px 1px rgba(0, 183, 255, 0.943);
+}
+.footer{
+    display: flex;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: fixed;
+    justify-content: center;
+    background-color: white;
+}
+@media (max-width:1000px){
+    form{
+        padding: 10px;
+    }
+    form{
+        width:60% ;
+    }
+    .btn .pro {
+        top:50px;
+        /* right: 10px; */
+    }
+     
+    /* .btn a:hover{
+        display: none; 
+    } */
+}
+@media (max-width:850px){
+    form{
+        width: 80%;
+    }
+    .btn .pro {
+        top:50px;
+        /* right: 10px; */
+    }
+}
+@media (max-width:750px){
+    header img {
+        margin-left: 0px;
+        height: 35px;
+        width: 50px;
+    }
+    form{
+
+        width: 80%;
+    }
+    header{
+        height: 50px;
+    }
+    .btn .pro {
+        top: 35px;
+        right: 10px;
+    }
+}
+@media (max-width:700px){
+    .btn:hover .pro {
+        font-size: 12px;
+        min-width: 200px;
+    }
+    .btn .pro {
+        top: 35px;
+        right: 10px;
+    }
+
+    .btn .probtn {
+        font-size: 12px;
+    }
+    .btn {
+        position: absolute;
+        top: 11px;
+        right: 110px;
+    }
+    form{
+        font-size: 12px;
+        width: 80%;
+    }
+    .nav li a {
+        font-size: 12px;
+    }
+    .nav li {
+        margin: 5px;
+    }
+    #btn{
+        font-size: 13px;
+    }
+}
+@media(max-width:650px){
+    form{
+width: 100%;
+    }
+}
+@media(max-width:600px){   
+    form {
+        width: 100%;
+    }
+    .input{
+        font-size: 10px;
+        width: 50%;
+        margin: 5px;
+    }
+    li a{
+        display: none;
+    }
+    .btn .probtn{   
+        display: none;
+    }
+    .btn #bars{
+        display: block;
+        text-decoration: none;
+    }
+    .btn{
+        right: 10px;
+       }
+}
+        @media(max-width:500px){
+            .btn .pro {
+                right:10px;
+            }
+            .footer{
+                font-size: 12px;
+            }
+        }
+@media(max-width:400px){
+    form{
+        width: 80%;
+        text-align:left;
+                }
+   .input{
+    margin: 5px 10px;
+    width:100%;
+   }
+ 
+   #btn {
+    font-size: 12px;
+   }
+   .btn .pro a {
+    font-size: 10px;
+    padding: 15px;
+}
+li a{
+    display: none;
+}
+
+}

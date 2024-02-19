@@ -1,0 +1,1142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: black;
+}
+header {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 2;
+}
+header img {
+    margin-left: 30px;
+    height: 45px;
+    width: 65px;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.nav li {
+    list-style: none;
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    display: inline;
+    margin: 20px;
+    /* border: 1px solid red;       */
+}
+
+.nav li a {
+    letter-spacing: 2px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 5px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    /* transition: all 0.3s ease-out; */
+    font-style: italic;
+
+}
+
+.btn {
+    position: absolute;
+    right: 300px;
+}
+.hamburger{
+    display: none;
+    font-style: italic;
+    background-color: black;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    display: none;
+}
+
+.btn .probtn {
+    cursor: pointer;
+    border: none;
+    background: none;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin: 12px 5px;
+    z-index: 2;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease-out;
+    font-style: italic;
+}
+
+.btn .probtn:hover {
+    color: rgb(0, 190, 253);
+    transition: all 0.2s ease-out;
+    text-shadow: 1px 1px 10px rgb(0, 191, 255), 2px 2px 13px rgb(255, 255, 255), 0px 0px 13px rgb(0, 183, 255);
+}
+
+
+.btn .pro a:hover {
+    border: 1px solid white;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 13px rgb(0, 183, 255), 0px 0px 13px rgb(0, 170, 255);
+
+
+}
+
+.btn .pro a {
+    background: none;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.1s ease;
+}
+
+.btn .pro {
+    font-style: italic;
+    visibility: hidden;
+    opacity: 0.1;
+    position: absolute;
+    margin-top: 5px;
+    /* background: none; */
+    background-color: rgb(0, 0, 0);
+    min-width: 260px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 183, 255, 0.694);
+    width: 20%;
+    transition:all 1s ;
+    transform: translateY(10%);
+}
+
+.btn:hover .pro {
+    visibility: visible;
+    transform: translateY(0%);
+    transition: all 0.3s;
+    opacity: 1;
+}
+
+li a:hover {
+    color: rgb(0, 200, 255);
+    transition: all 0.2s ease-out;
+    text-shadow: 1px 1px 10px rgb(0, 191, 255), 2px 2px 13px rgb(255, 255, 255), 0px 0px 13px rgb(0, 183, 255);
+
+}
+
+.img img {
+    margin-top: 65px;
+    height: 120vh;
+    width: 100%;
+}
+
+.img h1 {
+    background: none;
+    font-size: 40px;
+    font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    left: 20px;
+    top: 300px;
+    letter-spacing: 10px;
+    color: white;
+    text-shadow: 1px 1px 15px rgb(0, 177, 247);
+    -webkit-text-stroke: 0.1px rgb(0, 255, 234);
+}
+
+.img p {
+    background: none;
+    /* border: 1px solid burlywood; */
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 400px;
+}
+
+.img button {
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background: none;
+    padding: 10px 20px;
+    position: absolute;
+    left: 20px;
+    top: 450px;
+    transition: all 0.5s ease-in-out;
+    font-style: italic;
+
+}
+
+.img button:hover {
+    cursor: pointer;
+    font-style: italic;
+    font-weight: bold;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    box-shadow: inset 19cap 0cap 5px 1px rgba(0, 195, 255, 0.76), 0px 0px 15px 1px rgba(0, 183, 255, 0.943);
+
+}
+
+.section1 {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid rgb(255, 0, 81); */
+}
+
+.section1 img {
+    /* border: 1px solid white; */
+    margin: 10px;
+    width: 50%;
+}
+
+.section1 section {
+    text-align: justify;
+    justify-content: end;
+    font-size: 20px;
+    margin: 20px;
+    color: white;
+}
+
+.section1 h1 {
+    text-shadow: 1px 1px 10px rgb(0, 191, 255), 2px 2px 13px rgb(255, 255, 255), 0px 0px 13px rgb(0, 183, 255);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.section1 button {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background: none;
+    padding: 10px 20px;
+    transition: all 0.5s ease-in-out;
+    font-style: italic;
+    position: relative;
+    top: 10px;
+}
+
+.section1 button:hover {
+    cursor: pointer;
+    font-style: italic;
+    font-weight: bold;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    box-shadow: inset 15cap 0cap 5px 1px rgba(0, 195, 255, 0.76), 0px 0px 15px 1px rgba(0, 183, 255, 0.943);
+}
+
+.lifechange {
+    word-wrap: normal;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    padding: 50px;
+    text-align: center;
+}
+
+.lifechange h1 {
+    text-shadow: 1px 1px 10px rgb(0, 191, 255), 2px 2px 13px rgb(255, 255, 255), 0px 0px 13px rgb(0, 183, 255);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.transformation {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.transformation .para {
+    padding: 20px 25px;
+}
+
+.transformation .para p {
+    padding-top: 10px;
+}
+
+.transformations {
+    width: 25%;
+    /* border: 1px solid red; */
+    margin: 10px;
+    overflow: hidden;
+}
+
+.transformation .img {
+    width: 100%;
+    transition: all 0.5s ease;
+
+}
+
+.transformation #img1:hover {
+    scale: 1.1;
+    cursor: pointer;
+
+}
+
+.transformations h1 {
+    text-shadow: 1px 1px 10px rgb(0, 191, 255), 2px 2px 13px rgb(255, 255, 255), 0px 0px 13px rgb(0, 183, 255);
+    font-style: italic;
+}
+
+.nintydays {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.imgt {
+    overflow: hidden;
+    width: 50%;
+    text-align: left;
+}
+
+#ig img {
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.2s ease-out;
+}
+
+#ig img:hover {
+    transform: scale(1.1);
+}
+
+.nintydays div {
+    margin: 10px;
+    /* padding: 10px; */
+    /* border: 1px solid red; */
+}
+
+#igpara {
+    font-weight: bold;
+}
+
+#igpara h1 {
+    text-shadow: 1px 1px 10px rgb(0, 191, 255), 2px 2px 13px rgb(255, 255, 255), 0px 0px 13px rgb(0, 183, 255);
+    font-style: italic;
+}
+
+#igpara button {
+    color: rgb(255, 255, 255);
+    background: none;
+    /* width: 15%; */
+    padding: 5px;
+    font-style: italic;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+#igpara button:hover {
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    box-shadow: inset 15cap 0cap 5px 1px rgba(0, 195, 255, 0.76), 0px 0px 15px 1px rgba(0, 183, 255, 0.943);
+
+}
+
+.head1 {
+    text-shadow: 1px 1px 10px rgb(0, 191, 255), 2px 2px 13px rgb(255, 255, 255), 0px 0px 13px rgb(0, 183, 255);
+    font-style: italic;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    margin: 20px;
+}
+
+.access {
+    display: flex;
+    color: white;
+}
+
+.box {
+    width: 60%;
+    height: 60vh;
+    padding: 10px;
+    margin: 20px;
+    line-height: 1.5;
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(0, 29, 48);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box p {
+
+    font-size: 15px;
+}
+
+.box i {
+    font-size: 50px;
+}
+
+.box:hover {
+    transform: scale(0.9);
+    border: 1px solid rgb(0, 187, 255);
+    box-shadow: 0px 0px 10px 1px rgba(0, 183, 255, 0.694);
+    background-color: rgb(0, 10, 15);
+    color: rgb(0, 170, 255);
+}
+
+.workoutpro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+
+}
+
+.workouts {
+
+    border: 1px solid white;
+    margin: 20px;
+  padding: 15px 15px;
+    color: white;
+    text-align: right;
+width: 20%;
+}
+
+.workouts h1 {
+    text-align: center;
+    font-size: 16px;
+    margin:10px;
+}
+
+.workouts img {
+    width: 100%;
+}
+
+
+.workouts #rm {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 2px 12px;
+    text-decoration: none;
+    color: white;
+}
+    #rm:hover{
+        cursor: pointer;
+        font-weight: bold;
+        border: 1px solid rgb(0, 166, 255);
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 15px 1px rgba(0, 183, 255, 0.943);
+    
+    }
+.chat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    color: white;
+    border-radius: 5px;
+font-size: 35px;    
+overflow: hidden;
+transition: all 0.9s ease;
+}
+.chat:hover{
+    color: rgb(0, 0, 0);
+    background:linear-gradient(rgb(0, 183, 255),rgb(0, 255, 208),rgb(0, 119, 255) );
+}
+.chat i{
+    margin:5px;
+    border-radius: 5px;
+    filter: drop-shadow(1px 1px 2px 1px black);
+}
+
+
+.chat i:hover{
+    color: rgb(255, 255, 255);
+    color: navy;
+}
+.chat p{
+    font-weight: bold;
+    font-size: 10px;
+    color: rgb(121, 121, 121);
+}
+.chat input{
+    background:rgba(135, 207, 235, 0.425);
+transform: translatex(-100%);
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid skyblue;
+    border-radius: 5px ;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+}
+.chat:hover input{
+    border: 1px solid black;
+    transform: translateY(0%);
+    visibility: visible;
+}
+.chat button{
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    background: none;
+    font-size: 10px;
+    visibility: hidden;
+    overflow: hidden;
+}
+.chat:hover button{
+    transform: translatex(720%);
+    transition: all 0.5s ease-in;
+    visibility: visible;
+    color: black;
+
+}
+footer{
+    border-top: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    display:flex;
+justify-content: center;
+}
+.footer h1{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.footer a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+}
+.footer{
+    font-weight: bold;
+text-align: justify;    padding:10px 20px;
+    margin: 20px;
+    display: block;
+    width: 200px;
+    line-height: 30px;
+    /* border: 1px solid red; */
+}
+    .endline{
+        color: rgb(0, 0, 0);
+    text-align: center;
+        background-color: white;
+    }
+    #contactus h1{
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .footer a:hover{
+        font-weight: bold;
+        color: rgba(0, 179, 255, 0.993);
+    }
+    @media(max-width:950px){
+        .img img{
+            height: 100vh;
+        }
+        .img h1{
+            top: 250px;
+            font-size: 30px;
+            letter-spacing: 5px;
+        }
+        .img p{
+            top: 285px;
+        }
+        .img button{
+            top: 310px;
+            letter-spacing: 0px;
+        }
+        #igpara button{
+            width: 25%;
+        }
+        .box {
+            margin: 10px;
+            line-height: 30px;
+        }
+        .box p{
+            font-size: 12px;
+        }
+        .workouts{
+            margin: 15px;
+        }
+        .workouts img {
+            width: 100%;
+    }
+    .workouts h1{
+        font-size: 14px;
+    }
+}
+@media(max-width:900px){
+    .img img{
+        height: 90vh;
+    }
+    .section1 h1{
+        font-size: 20px;
+    }
+    .section1 p{
+        font-size: 17px;
+    }
+    .section1 button {
+letter-spacing: 0px;
+padding: 5px 10px;
+    }
+    #igpara h1{
+        font-size:20px;
+    }
+        #igpara button{
+            padding: 5px 10px
+    }
+    .workouts #rm{
+        padding: 5px 10px;
+        font-size: 10px;
+}
+.footer {
+    margin: 15px;
+    width: 190px;
+    line-height: 30px;
+}
+#contactus h1{
+    font-size: 20px;
+}
+.footer h1{
+    font-size: 20px;
+    margin:10px;
+}
+.footer a{
+    font-size: 15px;
+}
+
+}
+@media(max-width:850px){
+    .lifechange h1{
+        font-size: 25px;
+    }
+    .box i{
+        font-size: 40px;
+    }
+    .access h2{
+        font-size: 20px;
+    }
+    .access h1{
+    font-size: 25px
+    }
+    .head1 h1{
+        font-size: 25px;
+    }
+    .access h1 {
+        font-size: 22px;
+    }
+    .box i {
+        padding: 5px;
+        font-size: 30px;
+    }
+    .box{
+        line-height: 25px;
+        height: 56vh;
+    }
+    footer{
+        display: flex;
+        GAP: 10PX;
+        FLEX-WRAP: wrap;
+        justify-content: CENTER;
+    }
+    
+    .footer{
+        line-height:25px ;
+        width: 140px;
+        margin: 1px;
+        padding: 10px 5px;
+    }
+    .footer h1{
+        text-align:left;
+        margin: 10px 0px;
+    }
+    #contactus h1 {
+        font-size: 15px;
+    }
+    .footer a{
+        font-size: 10px;
+    }
+}
+@media (max-width:800px){
+.img img {
+    height: 87vh;
+}
+.transformations h1{
+    font-size: 20px;
+}
+.transformation .para p{
+    font-size: 14px;
+}
+}
+@media (max-width:750px){
+    .img button{
+        padding: 5px 10px;
+    }
+    .img img {
+        height: 80vh;
+    }
+    .transformation{
+        justify-content: space-around;
+    }
+    .transformation .para {
+padding: 10px 15px;
+}
+.para #h2{
+    font-size: 15px;
+}
+.btn:hover .pro{
+    font-size: 12px;
+    min-width: 200px;
+}
+#igpara p{
+    font-size: 13px;
+    margin: 15px 5px;
+}
+#igpara button{
+    padding: 5px 0px;
+    width: 25%;
+    margin-left:10px;
+}
+.nav ul{
+    display: none;
+}
+.btn .probtn{
+    display: none;
+}
+.checkbtn{
+    color: white;
+    display: block;
+    position: fixed;
+    top: .5rem;
+    right: 1rem;
+    z-index: 9999;
+}
+
+.hamburger{
+    overflow: scroll;
+    scroll-behavior: smooth;
+    display: block;
+    flex-direction: column;
+    position:absolute;
+    width: 50%;
+    height: 89vh;
+    background-color: #000000;
+    top: 67px;
+    left: -100%;
+    text-align: left;
+    transition: all .5s;        
+}
+.hamburger  .item1 {
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: none;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin: 12px 5px;
+    z-index: 2;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease-out;
+    font-style: italic;
+}
+
+
+.hamburger ul li{
+    
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.hamburger ul li a{
+    padding: 5px;
+    margin: 10px;
+    border-radius: 4px;
+    font-size: 15px;
+    /* font-size: 1.4rem; */
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger ul li a:hover{
+    border: 1px solid white;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 13px rgb(0, 183, 255), 0px 0px 13px rgb(0, 170, 255);
+    /* background-color: #4A55A2;   */
+}
+
+#check:checked ~ .hamburger{
+    left: 0;
+    position: fixed;
+    z-index: 9999;
+}
+}
+@media (max-width:700px){
+.img img {
+    height: 75vh;
+}
+
+.section1 p {
+    font-size: 12px;
+}
+.workouts {
+    margin: 12px;
+}
+.workouts img {
+    width: 100%;
+}
+}
+@media (max-width:650px) {
+    .img img {
+        height: 65vh;
+    }
+    .transformation .para {
+        padding: 10px 10px;
+    }
+    .transformation .para p{
+        font-size: 10px;
+    }
+    .box{
+        padding: 10px 10px;
+        line-height:23px ;
+    }
+}
+@media (max-width:600px){
+    .img h1 {
+        top: 200px;
+        font-size: 25px;
+        letter-spacing: 0px;
+    }
+    .nav li{
+        margin: 10px;
+    }
+    .btn {
+        position: absolute;
+        top: 9px;
+        right: 230px;
+    }
+    .footer{
+        width: 110px;
+        padding: 5px 5px;
+    }
+    .box {
+        padding: 19px 5px;
+        line-height: 20px;
+    }
+    .access h1 {
+        font-size: 20px;
+    }   
+    #igpara button {
+    width: 30%;
+    }
+    #igpara h1 {
+        font-size: 19px;
+    }
+    .lifechange{
+        padding: 30px;
+        text-align: justify;
+        font-size:15px ;
+        }
+        .lifechange h1 {
+            font-size:25px;
+        }
+        .workouts{
+            width: 100%;
+        }
+        .workouts img {
+            width: 100%;
+        }
+        .workoutpro{
+            flex-direction: column;
+            align-items: center;
+        }
+        .workouts img {
+            width: 100%;
+        }
+        
+        
+        .workouts h1 {
+            font-size: 20px;
+        }
+}
+@media (max-width:550px){
+    .section1 section{
+        margin:15px ;
+    }
+    #igpara h1 {
+        font-size: 15px;
+    }
+    #igpara button {
+        font-size: 15px;
+    }
+    .img button{
+        font-size: 10px;
+    }
+    #igpara button {
+        font-size: 10px;
+    }
+    .section1 button{
+        font-size: 10px;
+    }
+    .lifechange {
+        padding: 25px;
+    }
+    .para #h2 {
+        font-size: 20px;
+    }
+        .access{
+        align-items: center;
+        flex-direction: column;
+    }
+    .box i {
+        padding: 15px;
+        font-size: 100px;
+    }
+    .access h1 {
+        font-size: 25px;
+    }
+    .box p {
+        font-size: 12px;
+    }
+    .box{
+        line-height:23px ;
+    }
+    .box:hover{
+        transform: scale(1);
+    }
+    .img img {
+        height: 60vh;
+    }
+    
+.img h1{
+    font-size: 25px;
+}    
+.section1{
+    flex-direction: column;
+align-items: center;
+}
+.section1 img{
+    margin: 5px;
+    width: 100%;
+}
+.section1 section{
+    text-align: center;
+}
+
+.transformation .img {
+    overflow: hidden;
+width:100%;
+}
+.transformation{
+    flex-direction: column;
+    align-items: center;
+}
+.transformations {
+    width: 100%;
+}
+.transformation .para{
+    text-align: center;
+}
+.nintydays{
+    flex-direction: column;
+    width: 100%;
+    align-items:center;
+}
+.nintydays div{
+    margin: 0px;
+}
+.workouts img {
+    width: 100%;
+}
+
+
+#igpara{
+    text-align: center;
+    margin: 10px 10px;
+}
+.imgt{
+    width:100%;
+}
+    #igpara h1 {
+        font-size: 25px;
+    }
+    #igpara button {
+        margin: 10px;
+        width: 15%;
+    }
+}
+@media (max-width:500px){
+    header img {
+        margin-left: 0px;
+        height: 40px;
+        width: 60px;
+          }
+          .nav li {
+            margin: 5px;
+        }
+        .nav li a{
+            font-size: 12px;
+        }
+        .btn .probtn{
+            font-size: 12px;
+        }
+        .btn {
+            position: absolute;
+            top: 11px;
+            right: 185px;
+        }
+        .img img {
+            height: 55vh;
+        }
+        .lifechange h1 {
+            font-size: 20px;
+        }
+        .lifechange {
+            padding: 10px;
+        }
+        .transformation .para p {
+            font-size: 15px;
+        }
+        .workouts img {
+            width: 100%px;
+        }
+        .workoutpro{
+            width: 100%;
+        }
+        footer{
+      align-items: center;
+        }
+        .footer{
+            text-align: center;
+        }
+        .footer h1{
+            text-align: center;
+        }
+
+        .footer a {
+            font-size: 12px;
+        }
+            .footer h1{
+                margin: 5px 0px;
+            }
+
+}
+@media (max-width:450px){
+    .img img {
+        height: 50vh;
+    }
+    .img h1 {
+        font-size: 20px;
+    }
+    .lifechange{
+        text-align: center;
+    }
+    .lifechange p{
+        font-size: 12px;
+    }
+    .img p {
+        font-size: 12px;
+        top: 100px;
+    }
+    .img button {
+        top: 120px;
+    }
+    .transformation .para p {
+        font-size: 12px;
+    }
+    #igpara p {
+        margin: 10px 5px;;
+        font-size: 12px;
+     }
+     #igpara h1 {
+        font-size: 20px;
+    }
+    #igpara button {
+        margin: 5px;
+        width: 15%;
+    }
+    .box i {
+            font-size:80px;
+}
+.workouts img {
+    width: 100%;
+}
+.footer a {
+    font-size: 12px;
+}
+footer h1{
+    margin: 5px 0px;
+}
+}
+@media(max-width:400px){
+    .img img {
+        height: 45vh;
+    }
+    .img h1 {
+        font-size: 17px;
+    }
+    .btn .pro a{
+        padding: 10px;
+    }
+    .workouts img {
+        width: 100%;
+    }
+    .head1 h1 {
+        font-size: 20px;
+    }
+    .nav li a {
+        letter-spacing: 0px;
+    }
+    .btn {
+        position: absolute;
+        top: 13px;
+        right: 135px;
+    }
+    .nav li a {
+        font-size: 10px;
+    }
+    .btn .probtn {
+        font-size: 10px;
+    }
+    
+}
+@media (max-width:350px){
+    .img img {
+        height: 30vh;
+    }
+        .box {
+            line-height: 20px;
+        }
+        #igpara button {
+            margin: 5px;
+            width: 20%;
+        }
+}
+    
+    
