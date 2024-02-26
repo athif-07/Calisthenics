@@ -9,6 +9,23 @@ body {
     font-family: 'Rajdhani', sans-serif;
     background-color: black;
 }
+::-webkit-scrollbar{
+    width: 12px;
+
+}
+::-webkit-scrollbar-thumb{ 
+       background-color: rgb(113, 224, 246);
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover{
+    box-shadow: 0px 0px 100px 50px rgb(113, 224, 246);
+    background-color: rgb(113, 224, 246);
+    
+}
+::-webkit-scrollbar-track-piece{
+    border: 1px solid rgb(0, 183, 255);
+    border-radius: 3px;
+}
 header {
     position: fixed;
     left: 0px;
